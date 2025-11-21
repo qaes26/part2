@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>أسئلة على موضوع النظام العالمي الجديد - ضع دائرة</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            margin: 0;
+            background: #f5f5f5;
+            line-height: 1.8;
+            color: #222;
+        }
+
+        header {
+            background: linear-gradient(135deg, #8e44ad, #9b59b6);
+            color: #fff;
+            padding: 16px 12px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        header p {
+            margin: 5px 0 0;
+            font-size: 0.85rem;
+            opacity: 0.9;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 16px auto 32px;
+            padding: 0 10px 30px;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 12px;
+            font-size: 0.85rem;
+            text-decoration: none;
+            color: #8e44ad;
+        }
+
+        .card {
+            background: #ffffff;
+            padding: 12px 14px;
+            border-radius: 12px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+        }
+
+        h2 {
+            margin-top: 0;
+            font-size: 1.2rem;
+            color: #8e44ad;
+        }
+
+        form ol {
+            padding-right: 20px;
+            margin: 8px 0 0;
+        }
+
+        form li {
+            margin-bottom: 12px;
+            font-size: 0.93rem;
+            padding: 6px 6px;
+            border-radius: 8px;
+            transition: background 0.2s, border-right 0.2s;
+        }
+
+        .options {
+            margin-top: 3px;
+            margin-right: 10px;
+        }
+
+        .options label {
+            display: block;
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+
+        .options input[type="radio"] {
+            margin-left: 5px;
+            margin-right: 0;
+            transform: scale(0.9);
+        }
+
+        .feedback {
+            font-size: 0.82rem;
+            margin-top: 3px;
+        }
+
+        .correct-question {
+            background: #e9f7ef;
+            border-right: 4px solid #27ae60;
+        }
+
+        .incorrect-question {
+            background: #fdecea;
+            border-right: 4px solid #e74c3c;
+        }
+
+        .btn-wrapper {
+            text-align: center;
+            margin-top: 16px;
+        }
+
+        .btn-submit {
+            padding: 10px 22px;
+            font-size: 0.95rem;
+            border-radius: 999px;
+            border: none;
+            cursor: pointer;
+            background: #8e44ad;
+            color: #fff;
+            font-weight: 600;
+        }
+
+        .btn-submit:hover {
+            opacity: 0.92;
+        }
+
+        #result {
+            margin-top: 16px;
+            font-size: 0.95rem;
+            text-align: center;
+        }
+
+        #result strong {
+            color: #8e44ad;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 0.8rem;
+            color: #777;
+            padding: 10px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.3rem;
+            }
+            .card {
+                padding: 10px 11px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>أسئلة على موضوع النظام العالمي الجديد</h1>
+    <p>ضع دائرة حول الإجابة الصحيحة - إعداد الطالب اسامه علي النمرواي</p>
+</header>
+
+<main>
+    <a class="back-link" href="index.html">&larr; العودة إلى الملخص</a>
+
+    <div class="card">
+        <h2>أسئلة اختيار من متعدد (50 سؤال)</h2>
+
+        <form id="quizForm">
+            <ol>
+                <li id="q1">
+                    يقصد بالنظام العالمي:
+                    <div class="options">
+                        <label><input type="radio" name="q1" value="A"> (أ) القواعد والعلاقات التي تنظّم تعامل الدول فيما بينها.</label>
+                        <label><input type="radio" name="q1" value="B"> (ب) النظام الداخلي لكل دولة على حدة.</label>
+                        <label><input type="radio" name="q1" value="C"> (ج) علاقة الفرد بالأسرة فقط.</label>
+                        <label><input type="radio" name="q1" value="D"> (د) القوانين المحلية للمحاكم.</label>
+                    </div>
+                    <div class="feedback"></div>
+                </li>
+
+                <li id="q2">
+                    المقصود بالنظام العالمي الجديد هو:
+                    <div class="options">
+                        <label><input type="radio" name="q2" value="A"> (أ) مرحلة دولية بعد الحرب الباردة تغيّرت فيها موازين القوى.</label>
+                        <label><input type="radio" name="q2" value="B"> (ب) نظام اقتصادي داخل دولة واحدة.</label>
+                        <label><input type="radio" name="q2" value="C"> (ج) اتفاقية تجارية بين دولتين فقط.</label>
+                        <label><input type="radio" name="q2" value="D"> (د) شكل من أشكال الحكم المحلي.</label>
+                    </div>
+                    <div class="feedback"></div>
+                </li>
+
+                <li id="q3">
+                    من أبرز العوامل التاريخية لظهور النظام العالمي الجديد:
+                    <div class="options">
+                        <label><input type="radio" name="q3" value="A"> (أ) انهيار الاتحاد السوفيتي ونهاية الحرب الباردة.</label>
+                        <label><input type="radio" name="q3" value="B"> (ب) الحملة الصليبية الأولى.</label>
+                        <label><input type="radio" name="q3" value="C"> (ج) اكتشاف قارة أستراليا.</label>
+                        <label><input type="radio" name="q3" value="D"> (د) الثورة الصناعية الأولى فقط.</label>
+                    </div>
+                    <div class="feedback"></div>
+                </li>
+
+                <li id="q4">
+                    ميزة النظام ثنائي القطبية أنه يقوم على:
+                    <div class="options">
+                        <label><input type="radio" name="q4" value="A"> (أ) وجود قوتين عظميين متنافستين.</label>
+                        <label><input type="radio" name="q4" value="B"> (ب) اختفاء جميع التحالفات العسكرية.</label>
+                        <label><input type="radio" name="q4" value="C"> (ج) سيطرة دولة واحدة فقط.</label>
+                        <label><input type="radio" name="q4" value="D"> (د) حياد جميع الدول في الحروب.</label>
+                    </div>
+                    <div class="feedback"></div>
+                </li>
+
+                <li id="q5">
+                    نتج عن نظام الحرب الباردة:
+                    <div class="options">
+                        <label><input type="radio" name="q5" value="A"> (أ) سباق تسلح نووي وأحلاف عسكرية متقابلة.</label>
+                        <label><input type="radio" name="q5" value="B"> (ب) إلغاء الجيوش في العالم.</label>
+                        <label><input type="radio" name="q5" value="C"> (ج) توحّد النظام الاقتصادي عالميًا.</label>
+                        <label><input type="radio" name="q5" value="D"> (د) زوال الاستعمار فورًا.</label>
+                    </div>
+                    <div class="feedback"></div>
+                </li>
+
+                <li id="q6">
+                    أحادية القطبية تعني:
+                    <div class="options">
+                        <label><input type="radio" name="q6" value="A"> (أ) تفوق قوة دولية واحدة على بقية القوى.</label>
+                        <label><input type="radio" name="q6" value="B"> (ب) تساوي جميع الدول في القوة.</label>
+                        <label><input type="radio" name="q6" value="C"> (ج) عدم وجود أي قوة عظمى.</label>
+                        <label><input type="radio" name="q6" value="D"> (د) اقتصار القوة على التحالفات الإقليمية الصغيرة.</label>
+                    </div>
+                    <div class="feedback"></div>
+                </li>
+
+                <li id="q7">
+                    من خصائص النظام العالمي الجديد:
+                    <div class="options">
+                        <label><input type="radio" name="q7" value="A"> (أ) العولمة الاقتصادية.</label>
+                        <label><input type="radio" name="q7" value="B"> (ب) الانعزال التام بين الدول.</label>
+                        <label><input type="radio" name="q7" value="C"> (ج) منع حركة رؤوس الأموال.</label>
+                        <label><input type="radio" name="q7" value="D"> (د) إلغاء المنظمات الدولية.</label>
+                    </div>
+                    <div class="feedback"></div>
+                </li>
+
+                <li id="q8">
+                    العولمة الاقتصادية تعني:
+                    <div class="options">
+                        <label><input type="radio" name="q8" value="A"> (أ) زيادة ترابط الأسواق وحركة التجارة والاستثمار بين الدول.</label>
+                        <label><input type="radio" name="q8" value="B"> (ب) إلغاء العملات الوطنية تمامًا.</label>
+                        <label><input type="radio" name="q8" value="C"> (ج) الاعتماد على الاكتفاء الذاتي فقط.</label>
+                        <label><input type="radio" name="q8" value="D"> (د) منع الاستيراد والتصدير.</label>
+                    </div>
+                    <div class="feedback"></div>
+                </li>
+
+                <li id="q9">
+                    من أمثلة المنظمات الدولية المؤثرة في النظام العالمي:
+                    <div class="options">
+                        <label><input type="radio" name="q9" value="A"> (أ) الأمم المتحدة.</label>
+                        <label><input type="radio" name="q9" value="B"> (ب) مجلس الحي.</label>
+                        <label><input type="radio" name="q9" value="C"> (ج) نادي رياضي محلي.</label>
+                        <label><input type="radio" name="q9" value="D"> (د) جمعية طلابية صغيرة.</label>
+                    </div>
+                    <div class="feedback"></div>
+                </li>
+
+                <li id="q10">
+                    من أبرز آثار النظام العالمي الجديد على الدول النامية:
+                    <div class="options">
+                        <label><input type="radio" name="q10" value="A"> (أ) زيادة تبعيتها الاقتصادية للمؤسسات المالية العالمية.</label>
+                        <label><input type="radio" name="q10" value="B"> (ب) تحررها الكامل من الديون.</label>
+                        <label><input type="radio" name="q10" value="C"> (ج) استقلالها التام عن التجارة العالمية.</label>
+                        <label><input type="radio" name="q10" value="D"> (د) منعها من دخول الأسواق الدولية.</label>
+                    </div>
+                    <div class="feedback"></div>
+                </li>
+
+                <li id="q11">
+                    الهيمنة الثقافية تعني:
+                    <div class="options">
+                        <label><input type="radio" name="q11" value="A"> (أ) انتشار قيم وثقافة مجتمع قوي على مجتمعات أخرى.</label>
+                        <label><input type="radio" name="q11" value="B"> (ب) الاهتمام بالتراث المحلي فقط.</label>
+                        <label><input type="radio" name="q11" value="C"> (ج) منع تداول الكتب الأجنبية.</label>
+                        <label><input type="radio" name="q11" value="D"> (د) الاقتصار على وسائل الإعلام المحلية.</label>
+                    </div>
+                    <div class="feedback"></div>
+                </li>
+
+                <li id="q12">
+                    من وسائل الهيمنة الثقافية في العصر الحديث:
+                    <div class="options">
+                        <label><input type="radio" name="q12" value="A"> (أ) الأفلام والمسلسلات ومنصات التواصل.</label>
+                        <label><input type="radio" name="q12" value="B"> (ب) الأسواق الشعبية فقط.</label>
+                        <label><input type="radio" name="q12" value="C"> (ج) الرسائل الورقية.</label>
+                        <label><input type="radio" name="q12" value="D"> (د) الاجتماعات التقليدية الصغيرة.</label>
+                    </div>
+                    <div class="feedback"></div>
+                </li>
+
+                <li id="q13">
+                    من نتائج انتشار العولمة الثقافية:
+                    <div class="options">
+                        <label><input type="radio" name="q13" value="A"> (أ) تأثر بعض الشباب بأنماط حياة غربية.</label>
+                        <label><input type="radio" name="q13" value="B"> (ب) اختفاء جميع الثقافات المحلية فورًا.</label>
+                        <label><input type="radio" name="q13" value="C"> (ج) منع التواصل بين الشعوب.</label>
+                        <label><input type="radio" name="q13" value="D"> (د) حصر الثقافة في إطار ضيق.</label>
+                    </div>
+                    <div class="feedback"></div>
+                </li>
+
+                <li id="q14">
+                    من الآثار السياسية للنظام العالمي الجديد على العالم العربي:
+                    <div class="options">
+                        <label><input type="radio" name="q14" value="A"> (أ) ضغوط دولية للتدخل في الشؤون الداخلية.</label>
+                        <label><input type="radio" name="q14" value="B"> (ب) اختفاء الحدود بين الدول العربية تمامًا.</label>
+                        <label><input type="radio" name="q14" value="C"> (ج) إلغاء الحكومات المحلية.</label>
+                        <label><input type="radio" name="q14" value="D"> (د) منع أي نوع من العلاقات الخارجية.</label>
+                    </div>
+                    <div class="feedback"></div>
+                </li>
+
+                <li id="q15">
+                    من الآثار الاقتصادية للنظام العالمي الجديد:
+                    <div class="options">
+                        <label><input type="radio" name="q15" value="A"> (أ) تأثر الأسواق المحلية بالأزمات العالمية.</label>
+                        <label><input type="radio" name="q15" value="B"> (ب) ثبات الأسعار وعدم تأثرها بالخارج.</label>
+                        <label><input type="radio" name="q15" value="C"> (ج) زوال الحاجة إلى التجارة الخارجية.</label>
+                        <label><input type="radio" name="q15" value="D"> (د) منع الاستثمارات الأجنبية كليًا.</label>
+                    </div>
+                    <div class="feedback"></div>
+                </li>
+
+                <li id="q16">
+                    من آثار النظام العالمي الجديد على الهوية الثقافية:
+                    <div class="options">
+                        <label><input type="radio" name="q16" value="A"> (أ) تعرض الهوية للضغط والتشويش إذا غاب الوعي.</label>
+                        <label><input type="radio" name="q16" value="B"> (ب) حماية كاملة للهوية دون جهد.</label>
+                        <label><input type="radio" name="q16" value="C"> (ج) عدم تأثر الهوية إطلاقًا بما يجري عالميًا.</label>
+                        <label><input type="radio" name="q16" value="D"> (د) اختفاء اللغة المحلية فورًا.</label>
+                    </div>
+                    <div class="feedback"></div>
+                </li>
+
+                <li id="q17">
+                    القوة الناعمة تُعرَّف بأنها:
+                    <div class="options">
+                        <label><input type="radio" name="q17" value="A"> (أ) القدرة على التأثير عبر الثقافة والإعلام والقيم.</label>
+                        <label><input type="radio" name="q17" value="B"> (ب) عدد الدبابات والطائرات.</label>
+                        <label><input type="radio" name="q17" value="C"> (ج) حجم السلاح النووي فقط.</label>
+                        <label><input type="radio" name="q17" value="D"> (د) كثرة الجنود في الجيش.</label>
+                    </div>
+                    <div class="feedback"></div>
+                </li>
+
+                <li id="q18">
+                    من أمثلة القوة الناعمة:
+                    <div class="options">
+                        <label><input type="radio" name="q18" value="A"> (أ) الأفلام والبرامج الإعلامية.</label>
+                        <label><input type="radio" name="q18" value="B"> (ب) الأسلحة الثقيلة.</label>
+                        <label><input type="radio" name="q18" value="C"> (ج) المناورات العسكرية فقط.</label>
+                        <label><input type="radio" name="q18" value="D"> (د) العقوبات الاقتصادية.</label>
+                    </div>
+                    <div class="feedback"></div>
+                </li>
+
+                <li id="q19">
+                    من مخاطر الإفراط في تبنّي نظرية المؤامرة:
+                    <div class="options">
+                        <label><input type="radio" name="q19" value="A"> (أ) تبرير العجز وإلغاء مسؤولية الأمة عن واقعها.</label>
+                        <label><input type="radio" name="q19" value="B"> (ب) زيادة العمل الجاد.</label>
+                        <label><input type="radio" name="q19" value="C"> (ج) تحفيز الإنتاج المحلي.</label>
+                        <label><input type="radio" name="q19" value="D"> (د) تقوية روح المبادرة.</label>
+                    </div>
+                    <div class="feedback"></div>
+                </li>
+
+                <li id="q20">
+                    الموقف المتوازن من نظرية المؤامرة يقتضي:
+                    <div class="options">
+                        <label><input type="radio" name="q20" value="A"> (أ) إدراك وجود مصالح وتخطيط، دون تضخيم كل حدث على أنه مؤامرة.</label>
+                        <label><input type="radio" name="q20" value="B"> (ب) إنكار وجود مصالح دولية تمامًا.</label>
+                        <label><input type="radio" name="q20" value="C"> (ج) اعتبار كل شيء قدرًا لا علاقة للبشر به.</label>
+                        <label><input type="radio" name="q20" value="D"> (د) تصديق كل ما يُنشر دون تمحيص.</label>
+                    </div>
+                    <div class="feedback"></div>
+                </li>
+
+                <li id="q21">
+                    من واجبات الأمة تجاه النظام العالمي الجديد:
+                    <div class="options">
+                        <label><input type="radio" name="q21" value="A"> (أ) بناء القوة الذاتية في العلم والاقتصاد والإعلام.</label>
+                        <label><input type="radio" name="q21" value="B"> (ب) الانسحاب الكامل من العالم.</label>
+                        <label><input type="radio" name="q21" value="C"> (ج) تقليد القوى الكبرى في كل شيء بلا تمييز.</label>
+                        <label><input type="radio" name="q21" value="D"> (د) الاكتفاء بالنقد اللفظي دون عمل.</label>
+                    </div>
+                    <div class="feedback"></div>
+                </li>
+
+                <li id="q22">
+                    إصلاح الداخل في الدول الإسلامية مهم لأنه:
+                    <div class="options">
+                        <label><input type="radio" name="q22" value="A"> (أ) يقلل من قابلية الدول للهيمنة الخارجية.</label>
+                        <label><input type="radio" name="q22" value="B"> (ب) يزيد الفساد ويوسع التبعية.</label>
+                        <label><input type="radio" name="q22" value="C"> (ج) لا علاقة له بالعلاقات الدولية.</label>
+                        <label><input type="radio" name="q22" value="D"> (د) يمنع أي تطور اقتصادي.</label>
+                    </div>
+                    <div class="feedback"></div>
+                </li>
+
+                <li id="q23">
+                    من أهم مجالات بناء القوة الذاتية:
+                    <div class="options">
+                        <label><input type="radio" name="q23" value="A"> (أ) العلم والاقتصاد والتقنية.</label>
+                        <label><input type="radio" name="q23" value="B"> (ب) اللهو المبالغ فيه.</label>
+                        <label><input type="radio" name="q23" value="C"> (ج) الاعتماد على المساعدات فقط.</label>
+                        <label><input type="radio" name="q23" value="D"> (د) التقليد الأعمى للإعلام الأجنبي.</label>
+                    </div>
+                    <div class="feedback"></div>
+                </li>
+
+                <li id="q24">
+                    المشاركة الذكية في المنظمات الدولية تعني:
+                    <div class="options">
+                        <label><input type="radio" name="q24" value="A"> (أ) الاستفادة من الفرص المتاحة مع الدفاع عن مصالح الأمة.</label>
+                        <label><input type="radio" name="q24" value="B"> (ب) الانعزال التام عنها.</label>
+                        <label><input type="radio" name="q24" value="C"> (ج) القبول بكل القرارات دون نقاش.</label>
+                        <label><input type="radio" name="q24" value="D"> (د) الانسحاب من جميع الاتفاقيات.</label>
+                    </div>
+                    <div class="feedback"></div>
+                </li>
+
+                <li id="q25">
+                    من آثار الأزمات المالية العالمية على الدول الضعيفة:
+                    <div class="options">
+                        <label><input type="radio" name="q25" value="A"> (أ) تأثر عملاتها وأسعار السلع الأساسية.</label>
+                        <label><input type="radio" name="q25" value="B"> (ب) ثبات الأسعار بشكل كامل.</label>
+                        <label><input type="radio" name="q25" value="C"> (ج) زيادة الرواتب للجميع تلقائيًا.</label>
+                        <label><input type="radio" name="q25" value="D"> (د) تحررها من الديون فورًا.</label>
+                    </div>
+                    <div class="feedback"></div>
+                </li>
+
+                <li id="q26">
+                    من وسائل بناء وعي نقدي لدى الطالب:
+                    <div class="options">
+                        <label><input type="radio" name="q26" value="A"> (أ) متابعة مصادر موثوقة وتحليل الأخبار بعقل مفتوح.</label>
+                        <label><input type="radio" name="q26" value="B"> (ب) تصديق أي خبر يُنشر في وسائل التواصل.</label>
+                        <label><input type="radio" name="q26" value="C"> (ج) الاعتماد على الإشاعات.</label>
+                        <label><input type="radio" name="q26" value="D"> (د) رفض قراءة الكتب والمراجع.</label>
+                    </div>
+                    <div class="feedback"></div>
+                </li>
+
+                <li id="q27">
+                    التأثير الإعلامي في صورة العالم الإسلامي عالميًا يمكن أن يكون عبر:
+                    <div class="options">
+                        <label><input type="radio" name="q27" value="A"> (أ) تكرار صور نمطية سلبية في الأفلام والأخبار.</label>
+                        <label><input type="radio" name="q27" value="B"> (ب) إخفاء الإسلام تمامًا من الإعلام.</label>
+                        <label><input type="radio" name="q27" value="C"> (ج) منع أي حديث عن قضايا المسلمين.</label>
+                        <label><input type="radio" name="q27" value="D"> (د) الحديث الإيجابي المنحاز فقط.</label>
+                    </div>
+                    <div class="feedback"></div>
+                </li>
+
+                <li id="q28">
+                    ربط السنن الإلهية بواقع النظام العالمي يعني:
+                    <div class="options">
+                        <label><input type="radio" name="q28" value="A"> (أ) فهم أن التغيير مرتبط بعمل الإنسان ومسؤوليته.</label>
+                        <label><input type="radio" name="q28" value="B"> (ب) أن الأحداث لا علاقة لها بأفعال البشر.</label>
+                        <label><input type="radio" name="q28" value="C"> (ج) الاعتماد على الحظ فقط.</label>
+                        <label><input type="radio" name="q28" value="D"> (د) انتظار التغيير دون بذل الأسباب.</label>
+                    </div>
+                    <div class="feedback"></div>
+                </li>
+
+                <li id="q29">
+                    من إيجابيات العولمة التي يمكن استثمارها:
+                    <div class="options">
+                        <label><input type="radio" name="q29" value="A"> (أ) سهولة الوصول إلى المعرفة والتقنيات الحديثة.</label>
+                        <label><input type="radio" name="q29" value="B"> (ب) منع التعليم عن بُعد.</label>
+                        <label><input type="radio" name="q29" value="C"> (ج) حصر المعرفة في النخبة فقط.</label>
+                        <label><input type="radio" name="q29" value="D"> (د) انقطاع الجامعات عن العالم.</label>
+                    </div>
+                    <div class="feedback"></div>
+                </li>
+
+                <li id="q30">
+                    من سلبيات العولمة الثقافية:
+                    <div class="options">
+                        <label><input type="radio" name="q30" value="A"> (أ) تهديد بعض القيم والأخلاق إذا غاب الوعي.</label>
+                        <label><input type="radio" name="q30" value="B"> (ب) تقوية الانتماء للدين تلقائيًا.</label>
+                        <label><input type="radio" name="q30" value="C"> (ج) انعدام التأثير على الهوية.</label>
+                        <label><input type="radio" name="q30" value="D"> (د) حماية اللغة العربية بلا جهد.</label>
+                    </div>
+                    <div class="feedback"></div>
+                </li>
+
+                <li id="q31">
+                    من أهداف دراسة موضوع النظام العالمي الجديد في الجامعة:
+                    <div class="options">
+                        <label><input type="radio" name="q31" value="A"> (أ) تكوين وعي سياسي وحضاري لدى الطالب.</label>
+                        <label><input type="radio" name="q31" value="B"> (ب) زيادة الترفيه فقط.</label>
+                        <label><input type="radio" name="q31" value="C"> (ج) تعلّم مهارات رياضية.</label>
+                        <label><input type="radio" name="q31" value="D"> (د) التدريب على الحفظ الآلي بلا فهم.</label>
+                    </div>
+                    <div class="feedback"></div>
+                </li>
+
+                <li id="q32">
+                    من مظاهر التبعية الاقتصادية:
+                    <div class="options">
+                        <label><input type="radio" name="q32" value="A"> (أ) الاعتماد على القروض وشروط المؤسسات العالمية.</label>
+                        <label><input type="radio" name="q32" value="B"> (ب) الاكتفاء بالإنتاج المحلي مع قوة صناعية.</label>
+                        <label><input type="radio" name="q32" value="C"> (ج) امتلاك احتياطي نقدي كبير.</label>
+                        <label><input type="radio" name="q32" value="D"> (د) تنويع مصادر الدخل بشكل سليم.</label>
+                    </div>
+                    <div class="feedback"></div>
+                </li>
+
+                <li id="q33">
+                    التشويش على مفهوم "الحرية" في سياق الهيمنة الثقافية يعني:
+                    <div class="options">
+                        <label><input type="radio" name="q33" value="A"> (أ) تقديم الحرية بمعزل عن المسؤولية والقيم الدينية.</label>
+                        <label><input type="radio" name="q33" value="B"> (ب) ربط الحرية بالطاعة لله.</label>
+                        <label><input type="radio" name="q33" value="C"> (ج) منع الحديث عن الحرية نهائيًا.</label>
+                        <label><input type="radio" name="q33" value="D"> (د) حصر الحرية في العبادات فقط.</label>
+                    </div>
+                    <div class="feedback"></div>
+                </li>
+
+                <li id="q34">
+                    من أمثلة الأثر الأمني للنظام العالمي الجديد:
+                    <div class="options">
+                        <label><input type="radio" name="q34" value="A"> (أ) وجود قواعد عسكرية أجنبية في بعض البلدان.</label>
+                        <label><input type="radio" name="q34" value="B"> (ب) إلغاء جميع الجيوش.</label>
+                        <label><input type="radio" name="q34" value="C"> (ج) منع الحروب نهائيًا.</label>
+                        <label><input type="radio" name="q34" value="D"> (د) انعدام التحالفات العسكرية.</label>
+                    </div>
+                    <div class="feedback"></div>
+                </li>
+
+                <li id="q35">
+                    الدور الإيجابي الممكن للإعلام المحلي هو:
+                    <div class="options">
+                        <label><input type="radio" name="q35" value="A"> (أ) تقديم خطاب متوازن يحافظ على الهوية وينفتح على العالم.</label>
+                        <label><input type="radio" name="q35" value="B"> (ب) تقليد الإعلام الأجنبي بالكامل.</label>
+                        <label><input type="radio" name="q35" value="C"> (ج) نشر الشائعات لتعويض نقص المعلومات.</label>
+                        <label><input type="radio" name="q35" value="D"> (د) إهمال قضايا الأمة الكبرى.</label>
+                    </div>
+                    <div class="feedback"></div>
+                </li>
+
+                <li id="q36">
+                    من العوامل الداخلية التي تضعف موقف الدول في النظام العالمي:
+                    <div class="options">
+                        <label><input type="radio" name="q36" value="A"> (أ) الفساد والتخلف والصراعات الداخلية.</label>
+                        <label><input type="radio" name="q36" value="B"> (ب) وحدة الصف والإصلاح.</label>
+                        <label><input type="radio" name="q36" value="C"> (ج) الاستثمار في التعليم والبحث العلمي.</label>
+                        <label><input type="radio" name="q36" value="D"> (د) العدالة الاجتماعية.</label>
+                    </div>
+                    <div class="feedback"></div>
+                </li>
+
+                <li id="q37">
+                    من الوسائل العملية لمقاومة الاستلاب الثقافي:
+                    <div class="options">
+                        <label><input type="radio" name="q37" value="A"> (أ) التمسك بالهوية مع دراسة الثقافات الأخرى بوعي.</label>
+                        <label><input type="radio" name="q37" value="B"> (ب) رفض كل ما يأتي من الخارج بلا تمييز.</label>
+                        <label><input type="radio" name="q37" value="C"> (ج) تقليد الغرب في كل شيء.</label>
+                        <label><input type="radio" name="q37" value="D"> (د) الابتعاد عن القراءة والمعرفة.</label>
+                    </div>
+                    <div class="feedback"></div>
+                </li>
+
+                <li id="q38">
+                    يمكن أن يتحول العالم في المستقبل إلى:
+                    <div class="options">
+                        <label><input type="radio" name="q38" value="A"> (أ) نظام متعدد الأقطاب مع صعود قوى جديدة.</label>
+                        <label><input type="radio" name="q38" value="B"> (ب) نظام بلا أي دولة قوية.</label>
+                        <label><input type="radio" name="q38" value="C"> (ج) نظام بلا قانون أو مصالح.</label>
+                        <label><input type="radio" name="q38" value="D"> (د) نظام يختفي فيه الاقتصاد تمامًا.</label>
+                    </div>
+                    <div class="feedback"></div>
+                </li>
+
+                <li id="q39">
+                    من الأسئلة المفتوحة التي يطرحها موضوع النظام العالمي الجديد:
+                    <div class="options">
+                        <label><input type="radio" name="q39" value="A"> (أ) كيف يمكن للأمة أن توجد لنفسها مكانًا لائقًا في هذا النظام؟</label>
+                        <label><input type="radio" name="q39" value="B"> (ب) هل يجب الاستسلام التام للواقع؟</label>
+                        <label><input type="radio" name="q39" value="C"> (ج) هل يُغني الجهل عن العمل؟</label>
+                        <label><input type="radio" name="q39" value="D"> (د) هل الأفضل ترك فهم النظام العالمي؟</label>
+                    </div>
+                    <div class="feedback"></div>
+                </li>
+
+                <li id="q40">
+                    دراسة النظام العالمي الجديد من منظور إسلامي تهدف إلى:
+                    <div class="options">
+                        <label><input type="radio" name="q40" value="A"> (أ) الربط بين الواقع الدولي والقيم والسنن الإلهية.</label>
+                        <label><input type="radio" name="q40" value="B"> (ب) فصل الدين عن فهم الواقع.</label>
+                        <label><input type="radio" name="q40" value="C"> (ج) الاكتفاء بالجانب الروحي فقط.</label>
+                        <label><input type="radio" name="q40" value="D"> (د) تجاهل الأحداث العالمية.</label>
+                    </div>
+                    <div class="feedback"></div>
+                </li>
+
+                <li id="q41">
+                    من أهم نتائج فهم النظام العالمي الجديد لدى الطالب:
+                    <div class="options">
+                        <label><input type="radio" name="q41" value="A"> (أ) زيادة وعيه ومسؤوليته تجاه أمته.</label>
+                        <label><input type="radio" name="q41" value="B"> (ب) زيادة الشعور بالعجز واليأس دائمًا.</label>
+                        <label><input type="radio" name="q41" value="C"> (ج) الرغبة في الانعزال عن المجتمع.</label>
+                        <label><input type="radio" name="q41" value="D"> (د) ترك الدراسة الجامعية.</label>
+                    </div>
+                    <div class="feedback"></div>
+                </li>
+
+                <li id="q42">
+                    الجمع بين الفهم والعمل في التعامل مع النظام العالمي الجديد يعني:
+                    <div class="options">
+                        <label><input type="radio" name="q42" value="A"> (أ) فهم الواقع ثم السعي لتغييره في ضوء القيم الإسلامية.</label>
+                        <label><input type="radio" name="q42" value="B"> (ب) الاكتفاء بالفهم النظري فقط.</label>
+                        <label><input type="radio" name="q42" value="C"> (ج) العمل دون معرفة.</label>
+                        <label><input type="radio" name="q42" value="D"> (د) الاعتماد على العاطفة وحدها.</label>
+                    </div>
+                    <div class="feedback"></div>
+                </li>
+
+                <!-- أسئلة إضافية (لإكمال 50 سؤال) -->
+                <li id="q43">
+                    من مظاهر تأثير الشركات متعددة الجنسيات:
+                    <div class="options">
+                        <label><input type="radio" name="q43" value="A"> (أ) قدرتها على التأثير في سياسات بعض الدول الاقتصادية.</label>
+                        <label><input type="radio" name="q43" value="B"> (ب) انحصار عملها داخل حدود دولة واحدة.</label>
+                        <label><input type="radio" name="q43" value="C"> (ج) عدم تأثيرها في سوق العمل.</label>
+                        <label><input type="radio" name="q43" value="D"> (د) دورها يقتصر على الأعمال الخيرية فقط.</label>
+                    </div>
+                    <div class="feedback"></div>
+                </li>
+
+                <li id="q44">
+                    من الأمثلة على استخدام "الشرعية الدولية" للضغط:
+                    <div class="options">
+                        <label><input type="radio" name="q44" value="A"> (أ) فرض عقوبات على دولة بحجة خرق قرارات الأمم المتحدة.</label>
+                        <label><input type="radio" name="q44" value="B"> (ب) زيادة أعداد الطلاب في المدارس.</label>
+                        <label><input type="radio" name="q44" value="C"> (ج) دعم الرياضة المحلية.</label>
+                        <label><input type="radio" name="q44" value="D"> (د) تنظيم مسابقات ثقافية.</label>
+                    </div>
+                    <div class="feedback"></div>
+                </li>
+
+                <li id="q45">
+                    من صور استغلال التفوق الإعلامي:
+                    <div class="options">
+                        <label><input type="radio" name="q45" value="A"> (أ) توجيه الرأي العام لخدمة مصالح دول معينة.</label>
+                        <label><input type="radio" name="q45" value="B"> (ب) منع نقل أي أخبار عالمية.</label>
+                        <label><input type="radio" name="q45" value="C"> (ج) الاكتفاء بعرض الحقائق دون تعليق.</label>
+                        <label><input type="radio" name="q45" value="D"> (د) عرض كل وجهات النظر بالحياد التام دائمًا.</label>
+                    </div>
+                    <div class="feedback"></div>
+                </li>
+
+                <li id="q46">
+                    يمكن للطالب المسلم أن يتعامل مع النظام العالمي الجديد من خلال:
+                    <div class="options">
+                        <label><input type="radio" name="q46" value="A"> (أ) الجمع بين التفوق العلمي والالتزام بالقيم.</label>
+                        <label><input type="radio" name="q46" value="B"> (ب) ترك الدراسة والانشغال بالمؤامرات.</label>
+                        <label><input type="radio" name="q46" value="C"> (ج) تقليد الآخرين دون وعي.</label>
+                        <label><input type="radio" name="q46" value="D"> (د) الابتعاد عن فهم الواقع.</label>
+                    </div>
+                    <div class="feedback"></div>
+                </li>
+
+                <li id="q47">
+                    من ركائز بناء موقف إسلامي واعٍ من النظام العالمي:
+                    <div class="options">
+                        <label><input type="radio" name="q47" value="A"> (أ) معرفة الواقع، والرجوع للنصوص، وفقه الموازنة بين المصالح والمفاسد.</label>
+                        <label><input type="radio" name="q47" value="B"> (ب) الاعتماد على العواطف فقط.</label>
+                        <label><input type="radio" name="q47" value="C"> (ج) تجاهل النصوص الشرعية.</label>
+                        <label><input type="radio" name="q47" value="D"> (د) الاكتفاء بسماع الإشاعات.</label>
+                    </div>
+                    <div class="feedback"></div>
+                </li>
+
+                <li id="q48">
+                    من الإيجابيات التي يمكن أن توظَّف لصالح الأمة في النظام العالمي:
+                    <div class="options">
+                        <label><input type="radio" name="q48" value="A"> (أ) الاستفادة من الانفتاح لنشر الدعوة وتصحيح الصورة عن الإسلام.</label>
+                        <label><input type="radio" name="q48" value="B"> (ب) الانغلاق التام ورفض أي تواصل.</label>
+                        <label><input type="radio" name="q48" value="C"> (ج) الاكتفاء بالتواصل الداخلي فقط.</label>
+                        <label><input type="radio" name="q48" value="D"> (د) تعمد إساءة عرض الإسلام.</label>
+                    </div>
+                    <div class="feedback"></div>
+                </li>
+
+                <li id="q49">
+                    من أخطر نتائج الجهل بحقيقة النظام العالمي الجديد:
+                    <div class="options">
+                        <label><input type="radio" name="q49" value="A"> (أ) اتخاذ مواقف عشوائية قد تضر بمصالح الأمة.</label>
+                        <label><input type="radio" name="q49" value="B"> (ب) زيادة الانضباط في القرارات.</label>
+                        <label><input type="radio" name="q49" value="C"> (ج) وضوح الرؤية السياسية.</label>
+                        <label><input type="radio" name="q49" value="D"> (د) تحسّن التخطيط الاستراتيجي.</label>
+                    </div>
+                    <div class="feedback"></div>
+                </li>
+
+                <li id="q50">
+                    في ضوء دراستك، الموقف الصحيح من النظام العالمي الجديد هو:
+                    <div class="options">
+                        <label><input type="radio" name="q50" value="A"> (أ) فهمه بعمق، وانتقاد ما فيه من ظلم، واستثمار ما فيه من فرص.</label>
+                        <label><input type="radio" name="q50" value="B"> (ب) رفض فهمه تمامًا.</label>
+                        <label><input type="radio" name="q50" value="C"> (ج) التسليم الكامل بكل ما يأتي به.</label>
+                        <label><input type="radio" name="q50" value="D"> (د) الاكتفاء بالشكوى من الواقع.</label>
+                    </div>
+                    <div class="feedback"></div>
+                </li>
+            </ol>
+
+            <div class="btn-wrapper">
+                <button type="submit" class="btn-submit">تصحيح الإجابات وعرض النتيجة</button>
+            </div>
+        </form>
+
+        <div id="result"></div>
+    </div>
+</main>
+
+<footer>
+    &copy; 2025 - أسئلة على موضوع النظام العالمي الجديد - إعداد الطالب اسامه علي النمرواي.
+</footer>
+
+<script>
+    const correctAnswers = {
+        q1: "A", q2: "A", q3: "A", q4: "A", q5: "A",
+        q6: "A", q7: "A", q8: "A", q9: "A", q10: "A",
+        q11: "A", q12: "A", q13: "A", q14: "A", q15: "A",
+        q16: "A", q17: "A", q18: "A", q19: "A", q20: "A",
+        q21: "A", q22: "A", q23: "A", q24: "A", q25: "A",
+        q26: "A", q27: "A", q28: "A", q29: "A", q30: "A",
+        q31: "A", q32: "A", q33: "A", q34: "A", q35: "A",
+        q36: "A", q37: "A", q38: "A", q39: "A", q40: "A",
+        q41: "A", q42: "A", q43: "A", q44: "A", q45: "A",
+        q46: "A", q47: "A", q48: "A", q49: "A", q50: "A"
+    };
+
+    function letterToArabic(letter) {
+        const map = { A: "أ", B: "ب", C: "ج", D: "د" };
+        return map[letter] || letter;
+    }
+
+    document.getElementById('quizForm').addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const total = Object.keys(correctAnswers).length;
+        let score = 0;
+        let unanswered = 0;
+
+        for (const qId in correctAnswers) {
+            const li = document.getElementById(qId);
+            li.classList.remove('correct-question', 'incorrect-question');
+
+            const selected = document.querySelector(`input[name="${qId}"]:checked`);
+            const correct = correctAnswers[qId];
+            const feedback = li.querySelector('.feedback');
+            feedback.textContent = "";
+
+            if (!selected) {
+                unanswered++;
+                li.classList.add('incorrect-question');
+                feedback.textContent = "لم يتم اختيار إجابة، الإجابة الصحيحة هي: (" + letterToArabic(correct) + ")";
+                continue;
+            }
+
+            if (selected.value === correct) {
+                score++;
+                li.classList.add('correct-question');
+                feedback.textContent = "إجابة صحيحة ✔";
+            } else {
+                li.classList.add('incorrect-question');
+                feedback.textContent = "إجابة غير صحيحة ✘، الإجابة الصحيحة هي: (" + letterToArabic(correct) + ")";
+            }
+        }
+
+        const wrong = total - score;
+        const percent = Math.round((score / total) * 100);
+
+        const resultDiv = document.getElementById('result');
+        resultDiv.innerHTML =
+            "<strong>النتيجة:</strong> " + score + " / " + total +
+            " (" + percent + "%)" +
+            "<br>عدد الإجابات الصحيحة: " + score +
+            "<br>عدد الإجابات الخاطئة أو غير المجابة: " + wrong;
+    });
+</script>
+
+</body>
+</html>
